@@ -5,7 +5,7 @@ const Search = () =>{
     const [candidates,setCand]=useState([]);
     const {skill}=useParams();
     useEffect(()=>{
-       Axios.get(`http://localhost:3001/employer/search/${skill}`).then(res=>{
+       Axios.get(`https://vi-jobs.herokuapp.com/employer/search/${skill}`).then(res=>{
            setCand(res.data);
        })
     },[])

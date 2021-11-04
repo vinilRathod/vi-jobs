@@ -11,7 +11,7 @@ const Register = () =>{
     const history = useHistory();
     
     const registerEmployee= ()=>{
-        Axios.post('http://localhost:3001/employer/register',{
+        Axios.post('https://vi-jobs.herokuapp.com/employer/register',{
             name,password:passwd,mail,cont,loc,company
         }).then(response=>{
             if(response.data.pass){

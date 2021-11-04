@@ -5,11 +5,11 @@ const Home = () =>{
     const [skill,setSkill] = useState('');
     useEffect(()=>{
         if (skill===''){
-        Axios.get('http://localhost:3001/employee/jobs').then((response)=>{
+        Axios.get('https://vi-jobs.herokuapp.com/employee/jobs').then((response)=>{
             setJob(response.data);
         })
     }else{
-        Axios.get(`http://localhost:3001/employee/job/${skill}`).then(response=>{
+        Axios.get(`https://vi-jobs.herokuapp.com/employee/job/${skill}`).then(response=>{
             setJob(response.data);
         });
     }

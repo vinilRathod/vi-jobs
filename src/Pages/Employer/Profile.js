@@ -7,7 +7,7 @@ const Profile = () =>{
     const history = useHistory();
 
     useEffect(()=>{
-        Axios.get(`http://localhost:3001/employer/${localStorage.getItem('username')}`).then(response=>{
+        Axios.get(`https://vi-jobs.herokuapp.com/employer/${localStorage.getItem('username')}`).then(response=>{
             setData(response.data);
         })
     },[])
@@ -33,7 +33,7 @@ const Profile = () =>{
         else{
             update.company=data.company
         }
-        Axios.post(`http://localhost:3001/employer/update/${localStorage.getItem('username')}`,update).then(response=>{
+        Axios.post(`https://vi-jobs.herokuapp.com/employer/update/${localStorage.getItem('username')}`,update).then(response=>{
             if(response.data.pass){
                 alert(response.data.msg);
                 history.push('/homeEmployer');

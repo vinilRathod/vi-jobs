@@ -7,13 +7,13 @@ const Home = () =>{
     const [skill,setSkill]=useState();
     const history=useHistory();
     useEffect(()=>{
-        Axios.get(`http://localhost:3001/employer/jobs/${localStorage.getItem('username')}`).then((response)=>{
+        Axios.get(`https://vi-jobs.herokuapp.com/employer/jobs/${localStorage.getItem('username')}`).then((response)=>{
             setJob(response.data);
         })
     },[])
     const deleteJob=(id)=>{
         console.log(id);
-        Axios.delete(`http://localhost:3001/employer/job/${id}`).then(()=>{
+        Axios.delete(`https://vi-jobs.herokuapp.com/employer/job/${id}`).then(()=>{
             alert("Job deleted!");
             history.go(0);
         })

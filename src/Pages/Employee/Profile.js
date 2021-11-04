@@ -16,7 +16,7 @@ const Profile = () =>{
 
     useEffect(()=>{
         
-        Axios.get(`http://localhost:3001/employee/profile/${name}`).then(response=>{
+        Axios.get(`https://vi-jobs.herokuapp.com/employee/profile/${name}`).then(response=>{
             setData(response.data);
             
         })
@@ -67,7 +67,7 @@ const Profile = () =>{
             update.branch=data.branch
         }
         console.log(update);
-        Axios.post(`http://localhost:3001/employee/update/${localStorage.getItem('username')}`,update).then(response=>{
+        Axios.post(`https://vi-jobs.herokuapp.com/employee/update/${localStorage.getItem('username')}`,update).then(response=>{
             if(response.data.pass){
                 alert(response.data.msg);
                 history.push('/homeEmployee');

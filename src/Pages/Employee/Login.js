@@ -7,7 +7,7 @@ const Login = () =>{
     const history = useHistory();
     
     const loginEmployee= ()=>{
-        Axios.post('http://localhost:3001/employee/login',{
+        Axios.post('https://vi-jobs.herokuapp.com/employee/login',{
             password:passwd,mail
         }).then(response=>{
             if(response.data.loggedin===true){

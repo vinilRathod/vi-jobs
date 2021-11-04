@@ -13,7 +13,7 @@ const Post = () =>{
     const history = useHistory();
     
     const postJob= ()=>{
-        Axios.post('http://localhost:3001/employer/post',{
+        Axios.post('https://vi-jobs.herokuapp.com/employer/post',{
             mail,title,type,loc,skill1,skill2,company,link
         }).then(response=>{
             if(response.data.pass){
