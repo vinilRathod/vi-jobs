@@ -30,6 +30,9 @@ const Home = () =>{
                 <a href='/profileEmployee' class="text-white nav-link">Profile</a>
                 </li>
                 <li class="nav-item text-white">
+                <a href='/interview' class="text-white nav-link">Interview Preparation</a>
+                </li>
+                <li class="nav-item text-white">
                 <a href='/logoutEmployee' class="text-white nav-link">Logout</a>
                 </li>
             </ul>
@@ -65,7 +68,13 @@ const Home = () =>{
                     </div>
                 )
             })}
-            
+            <nav class="navbar navbar-expand-sm bg-dark navbar-dark justify-content-center">
+            <ul class="navbar-nav">
+                <li class="nav-item text-white">
+                <h3>Made with &#10084; by Vinil Rathod!</h3>
+                </li>
+            </ul>
+            </nav>
         </div>
     )
 }

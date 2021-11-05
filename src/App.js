@@ -13,6 +13,7 @@ import EmployeeLogout from './Pages/Employee/Logout';
 import EmployerLogout from './Pages/Employer/Logout';
 import EmployerPost from './Pages/Employer/Post';
 import Search from './Pages/Employer/Search';
+import Interview from './Pages/Employee/Interview';
 const App =() =>{
     return (
         <>
@@ -30,6 +31,7 @@ const App =() =>{
             <Route exact path="/logoutEmployer" component={EmployerLogout} />
             <Route exact path="/post" component={EmployerPost} />
             <Route exact path="/search/:skill" component={Search} />
+            <Route exact path="/interview" component={Interview} />
         </Router>
         </>
     )

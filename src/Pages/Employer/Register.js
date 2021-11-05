@@ -32,6 +32,7 @@ const Register = () =>{
                 </li>
             </ul>
             </nav>
+            
             <nav class="navbar navbar-expand-sm bg-dark navbar-dark justify-content-center">
             <ul class="navbar-nav">
                 <li class="nav-item text-white">
@@ -67,6 +68,13 @@ const Register = () =>{
                 </div>
                 <button type="button" class="btn btn-primary" onClick={registerEmployee}>Register</button>
             </form>
+            <nav class="navbar navbar-expand-sm bg-dark navbar-dark justify-content-center">
+            <ul class="navbar-nav">
+                <li class="nav-item text-white">
+                <h3>Made with &#10084; by Vinil Rathod!</h3>
+                </li>
+            </ul>
+            </nav>
             </div>
 
     )

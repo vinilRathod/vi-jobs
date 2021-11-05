@@ -34,6 +34,7 @@ const Post = () =>{
                 </li>
             </ul>
             </nav>
+            
             <nav class="navbar navbar-expand-sm bg-dark navbar-dark justify-content-center">
             <ul class="navbar-nav">
                 <li class="nav-item text-white">
@@ -73,6 +74,13 @@ const Post = () =>{
                 </div>
                 <button type="button" class="btn btn-primary" onClick={postJob}>Post</button>
             </form>
+            <nav class="navbar navbar-expand-sm bg-dark navbar-dark justify-content-center">
+            <ul class="navbar-nav">
+                <li class="nav-item text-white">
+                <h3>Made with &#10084; by Vinil Rathod!</h3>
+                </li>
+            </ul>
+            </nav>
             </div>
 
     )
