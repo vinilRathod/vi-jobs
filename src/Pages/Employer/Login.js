@@ -15,7 +15,7 @@ const Login = () =>{
                 localStorage.setItem("username",response.data.username);
                 history.push('/homeEmployer');
             }else{
-                alert(response.data.msg);
+                alert(response.data.message);
             }
         })
     };
